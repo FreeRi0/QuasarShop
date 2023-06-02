@@ -1,14 +1,16 @@
 import gql from "graphql-tag";
 
 export const data = gql`
-  query {
+  query goods {
     shop_goods {
       id
       images
       title
       price
       rating
-      description
+      description,
+      quantity,
+      category
     }
   }
 `;
